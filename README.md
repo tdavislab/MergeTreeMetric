@@ -65,3 +65,21 @@ $ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strat
  [threshold for simplification (optional)]
 ```
 
+## Features
+```bash
+$ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP]
+ [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] 
+ [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] 
+ [threshold for simplification (optional)]
+```
+
+#### Parameters
+
+- **[dir to files] **
+  - Path to the folder of time-varying dataset.
+  - Each data file should has an index in filename to specify the time step.
+  - Acceptable format of time-varying data: ".vtp" and ".vtk"
+ 
+- **[Name of scalar field] **
+  - The name of attribute for computing merge tree. 
+
