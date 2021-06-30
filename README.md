@@ -13,7 +13,7 @@ The implementation is described in "Geometry Aware Merge Tree Comparisons for Ti
 
 ## Installation
 
-Tested with Python 2.7&3.7, MacOS and Linux.
+Tested with Python 2.7&3.7, TTK 0.9.8, Paraview 5.6.1, MacOS and Linux.
 
 ### Dependencies
 
@@ -75,11 +75,11 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
 
 #### Parameters
 
-- **Path to files**
+- **\[Path to files\]**
   - Path to the folder of time-varying dataset.
   - Each data file should has an index in filename to specify the time step.
   - Acceptable format of time-varying data: ".vtp" and ".vti"
  
-- **Name of scalar field**
+- **\[Name of scalar field\]**
   - The name of attribute for computing merge tree. 
 
