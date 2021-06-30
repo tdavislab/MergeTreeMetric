@@ -1,8 +1,8 @@
 # MergeTreeMetric
 
-This is a Python implementation of computing pairwise distance matrices for time-varying data. These matrices are calculated using four metrics, including bottleneck distance, Wasserstein distance, and labelled interleaving distance between two merge trees, as well as Euclidean distances between scalar fields.
+This is a Python implementation of computing pairwise distance matrices for time-varying data. These matrices are calculated using four metrics: bottleneck distance, Wasserstein distance, and labelled interleaving distance between two merge trees, and Euclidean distances between scalar fields.
 
-The implementation is described in "Geometry Aware Merge Tree Comparisons forTime-Varying Data with Interleaving Distances" (under review).
+The implementation is described in "Geometry Aware Merge Tree Comparisons for Time-Varying Data with Interleaving Distances" (under review).
 
 
 - [Installation](#installation)
@@ -10,3 +10,12 @@ The implementation is described in "Geometry Aware Merge Tree Comparisons forTi
 - [Usage](#usage)
 - [Citation](#citation)
 - [License](#license)
+
+## Installation
+
+Tested with Python 2.7&3.7, MacOS and Linux.
+
+### Dependencies
+
+
+This software requires [NumPy](https://numpy.org/), [SciPy](https://www.scipy.org/), [NetworkX](https://networkx.github.io/), [Matplotlib](https://matplotlib.org/) and [VTK](https://vtk.org) to run.

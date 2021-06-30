@@ -1,7 +1,6 @@
 import sys
 import math
 import vtk
-import glob
 import os
 import numpy as np
 from paraview.simple import *

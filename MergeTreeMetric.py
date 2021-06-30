@@ -1,8 +1,6 @@
 import os
 import re
 
-import vtk
-from vtk.util.numpy_support import vtk_to_numpy
 import numpy as np
 import sys
 import networkx as nx
@@ -203,7 +201,7 @@ def plot4PC(mt_dir, inputFiles, outFile, treeType, thr):
     
 if __name__ == '__main__':
     if len(sys.argv)<9 or len(sys.argv)>10:
-        print("python script.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyNode] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]")
+        print("python script.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]")
         
     else:
         fileDir = sys.argv[1]
@@ -217,6 +215,7 @@ if __name__ == '__main__':
         if len(sys.argv)==10:
             threshold = float(sys.argv[9])
 
+        ETparams = 0.5
         if mappingStrategy == "ET":
             ETparams = float(input("\n\nPlease enter lambda for hybrid mapping([0,1]): "))
         outDir = os.path.join(fileDir, 'Output')

@@ -1,12 +1,8 @@
-"""Interactive Visualization Tools for A Structural Average of Labeled Merge Trees"""
 # Author: Lin Yan <lynne.h.yan@gmail.com>
 
 import sys
 import os
 import re
-#from flask import Flask, render_template, request, jsonify
-#from werkzeug.contrib.fixers import ProxyFix
-import random
 from copy import deepcopy
 
 import numpy as np
@@ -15,17 +11,10 @@ import math
 import copy
 from scipy.optimize import linear_sum_assignment
 import networkx as nx
-from sklearn import manifold
-from sklearn.cluster import DBSCAN
-import matplotlib.image as mpimg
-import Isomap
 from numpy import unravel_index
-
-#import matplotlib.pyplot as plt
 
 MAX_RADIUS = 99999999999999999999999999999999
 FLUCT = 0.000001
-#app = Flask(__name__)
 
 
 def make_dir(new_dir):
@@ -544,13 +533,13 @@ def calculate_tree_dist(T1, T2, l1, l2, ED, extending_mode):
        nodes2, links2 = mapping_leaves(nodes2, links2, nodes1, links1, l1, ED)
     else:
         if l1 < l2:
-            if extending_mode == "dmyNode":
+            if extending_mode == "dmyVert":
                 nodes1, links1 = extend_leaves_dmyNodes(nodes1, links1, l1, nodes2, links2, l2, ED)
             else:
                 nodes1, links1 = extend_leaves(nodes1, links1, l1, nodes2, links2, l2, ED)
             l1 = l2
         else:
-            if extending_mode == "dmyNode":
+            if extending_mode == "dmyVert":
                 nodes2, links2 = extend_leaves_dmyNodes(nodes2, links2, l2, nodes1, links1, l1, ED)
             else:
                 nodes2, links2 = extend_leaves(nodes2, links2, l2, nodes1, links1, l1, ED)
@@ -581,7 +570,7 @@ def calculate_tree_matrices(T1, T2, l1, l2, ED, extending_mode, idx, fileDir):
 
     else:
        if l1 < l2:
-            if extending_mode == "dmyNode":
+            if extending_mode == "dmyVert":
                 nodes1, links1 = extend_leaves_dmyNodes(nodes1, links1, l1, nodes2, links2, l2, ED)
             else:
                 nodes1, links1 = extend_leaves(nodes1, links1, l1, nodes2, links2, l2, ED)
@@ -589,7 +578,7 @@ def calculate_tree_matrices(T1, T2, l1, l2, ED, extending_mode, idx, fileDir):
             T1['Nodes'] = nodes1
             T1['Edges'] = links1
        else:
-            if extending_mode == "dmyNode":
+            if extending_mode == "dmyVert":
                 nodes2, links2 = extend_leaves_dmyNodes(nodes2, links2, l2, nodes1, links1, l1, ED)
             else:
                 nodes2, links2 = extend_leaves(nodes2, links2, l2, nodes1, links1, l1, ED)
@@ -1115,14 +1104,7 @@ def getScalarFieldMatrix(scalarFile, scalarField):
     else:
         scalar =  np.loadtxt(scalarFile)[1]
     return [scalar]
-
-
-def getImageMatrix(fileName):
-    img = mpimg.imread(fileName)     
-    gray = rgb2gray(img)    
-    #gray  = removeTranparent(gray)
-    m = np.array(gray.ravel())
-    return [m] 
+ 
 
 def getIndexOfNodes(samples, l1, l2):
     index = []

@@ -4,7 +4,6 @@ import sys
 import math
 import vtk
 from vtk.util.numpy_support import vtk_to_numpy
-import glob
 import os
 from paraview.simple import *
 
