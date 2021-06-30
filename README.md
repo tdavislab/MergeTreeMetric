@@ -46,7 +46,7 @@ export PV_PLUGIN_PATH="/PATH/TO/PVPYTHON"
 
 3. Hera
 
-- We use Hera to calculate bottleneck distance and Wasserstein distance between two persistence diagram. Please following this [link](https://github.com/grey-narn/hera) to install Hera.
+- We use Hera to calculate bottleneck distance and Wasserstein distance between two persistence diagrams. Please following this [link](https://github.com/grey-narn/hera) to install Hera.
 
 - Adding environment variables in whatever file you normally configure these (e.g. ~/.bash_profile):
 ```bash
@@ -54,4 +54,11 @@ export PATH="/PATH/TO/hera/wasserstein/build"
 export PATH="/PATH/TO/hera/bottleneck/build"
 ```
 
+### Download and Run
+
+```bash
+git clone git@github.com:tdavislab/MergeTreeMetric.git
+cd MergeTreeMetric
+python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]
+```
 
