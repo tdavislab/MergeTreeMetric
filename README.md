@@ -28,11 +28,11 @@ Tested with Python 2.7&3.7, MacOS and Linux.
 If you do not have these packages installed, please use the following command to intall them.
 
 ```bash
-pip install numpy
-pip install scipy
-pip install networkx
-pip install matplotlib
-pip install vtk
+$ pip install numpy
+$ pip install scipy
+$ pip install networkx
+$ pip install matplotlib
+$ pip install vtk
 ```
 
 2. TTK and Paraview
@@ -54,11 +54,11 @@ export PATH="/PATH/TO/hera/wasserstein/build"
 export PATH="/PATH/TO/hera/bottleneck/build"
 ```
 
-### Download and Run
+### Installation
 
 ```bash
-git clone git@github.com:tdavislab/MergeTreeMetric.git
-cd MergeTreeMetric
-python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]
+$ git clone https://github.com/tdavislab/MergeTreeMetric.git
+$ cd MergeTreeMetric
+$ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]
 ```
 
