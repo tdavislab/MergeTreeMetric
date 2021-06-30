@@ -35,6 +35,23 @@ pip install matplotlib
 pip install vtk
 ```
 
-2. TTK 
+2. TTK and Paraview
 
-We need TTK and Paraview to calculate the merge trees from scalar fields. Please following this [link](https://topology-tool-kit.github.io/installation.html) to install both TTK and Paraview.
+- We need TTK and Paraview to calculate the merge trees from scalar fields. Please following this [link](https://topology-tool-kit.github.io/installation.html) to install both TTK and Paraview.
+
+- After installation of TTK and Paraview, adding environment variable for pvpython in whatever file you normally configure these (e.g. ~/.bash_profile):
+```bash
+export PV_PLUGIN_PATH="/PATH/TO/PVPYTHON"
+```
+
+3. Hera
+
+- We use Hera to calculate bottleneck distance and Wasserstein distance between two persistence diagram. Please following this [link](https://github.com/grey-narn/hera) to install Hera.
+
+- Adding environment variables in whatever file you normally configure these (e.g. ~/.bash_profile):
+```bash
+export PATH="/PATH/TO/hera/wasserstein/build"
+export PATH="/PATH/TO/hera/bottleneck/build"
+```
+
+
