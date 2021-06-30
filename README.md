@@ -84,7 +84,7 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
   - The name of attribute for computing merge tree. 
 
 - **\[Mapping Strategy: TD/ED/ET/MP]**
-  -  Labelling strategy selecting from TD (tree distance mapping, <img src="https://render.githubusercontent.com/render/math?math=d_t">), ED (Euclidean distance mapping, <img src="https://render.githubusercontent.com/render/math?math=d_e">), ET (hybrid mapping, <img src="https://render.githubusercontent.com/render/math?math=d_h">), and MP(Morse mapping)
-  - If select hybrid mapping, you will need to enter <img src="https://render.githubusercontent.com/render/math?math=\lambda \in [0, 1]"> for hybrid mapping (<img src="https://render.githubusercontent.com/render/math?math=d_h = \lambda \cdot d_t+(1-\lambda) \cdot d_e">). 
+  -  Labelling strategy selecting from TD (tree distance mapping), ED (Euclidean distance mapping), ET (hybrid mapping), and MP(Morse mapping)
+  - If select hybrid mapping, you will need to enter <img src="https://render.githubusercontent.com/render/math?math=\lambda \in [0, 1]"> for hybrid mapping. 
   
   
