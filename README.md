@@ -18,4 +18,5 @@ Tested with Python 2.7&3.7, MacOS and Linux.
 ### Dependencies
 
 - Python packages
+
 This software requires [NumPy](https://numpy.org/), [SciPy](https://www.scipy.org/), [NetworkX](https://networkx.github.io/), [Matplotlib](https://matplotlib.org/) and [VTK](https://vtk.org) to run.
