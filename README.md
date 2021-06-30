@@ -59,6 +59,9 @@ export PATH="/PATH/TO/hera/bottleneck/build"
 ```bash
 $ git clone https://github.com/tdavislab/MergeTreeMetric.git
 $ cd MergeTreeMetric
-$ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]
+$ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP]
+ [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] 
+ [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] 
+ [threshold for simplification (optional)]
 ```
 
