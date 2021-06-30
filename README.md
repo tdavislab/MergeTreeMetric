@@ -106,6 +106,6 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
  - **\[threshold for simplification (optional)\]**
   - You can specify the threshold for simplification directly.
   - Otherwise, this code will plot persistence curves for time-varying data, and require you to choose threshold based on persistence curve.
-  <center><img src="PersistenceCurves-VortexStreet.png" width="120"></center>
+  <center><img src="PersistenceCurves-VortexStreet.png" width="360"></center>
   
  
