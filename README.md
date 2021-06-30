@@ -85,4 +85,4 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
 
 - **\[Mapping Strategy: TD/ED/ET/MP]**
   -  Labelling strategy selecting from TD (tree distance mapping), ED (Euclidean distance mapping), ET (hybrid mapping), and MP(Morse mapping)
-  - If you select hybrid mapping, you will need to enter $`\lambda \in [0, 1]`$ ([0,1]) for hybrid mapping. 
+  - If you select hybrid mapping, you will need to enter \gammma $`\lambda \in [0, 1]`$ ([0,1]) for hybrid mapping. 
