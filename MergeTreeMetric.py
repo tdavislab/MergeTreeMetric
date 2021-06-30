@@ -201,7 +201,7 @@ def plot4PC(mt_dir, inputFiles, outFile, treeType, thr):
     
 if __name__ == '__main__':
     if len(sys.argv)<9 or len(sys.argv)>10:
-        print("python script.py [Path to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]")
+        print("python script.py [Path to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP] [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] [Skip merge tree and Morse complex calculation] [Output labelling result for global mapping] [threshold for simplification (optional)]")
         
     else:
         fileDir = sys.argv[1]

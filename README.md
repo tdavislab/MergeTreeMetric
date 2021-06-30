@@ -69,7 +69,7 @@ $ python MergeTreeMetric.py [dir to files] [Name of scalar field] [Mapping Strat
 ```bash
 $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Strategy: TD/ED/ET/MP]
  [Extending Strategy: dmyLeaf/dmyVert] [Tree Type: jt/st] [Glabal or Pairwise Mapping: GM/PM] 
- [Skip merge tree and morse smale calculation] [Output labelling result for global mapping] 
+ [Skip merge tree and Morse complex calculation] [Output labelling result for global mapping] 
  [threshold for simplification (optional)]
 ```
 
@@ -87,4 +87,25 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
   -  Labelling strategy selecting from TD (tree distance mapping), ED (Euclidean distance mapping), ET (hybrid mapping), and MP(Morse mapping)
   - If select hybrid mapping, you will need to enter <img src="https://render.githubusercontent.com/render/math?math=\lambda \in [0, 1]"> for hybrid mapping. 
   
+- **\[Extending Strategy: dmyLeaf/dmyVert\]**
+  - Select strategy from dmyLeaf (dummy leaves) and dmyVert (dummy vertices) to create dummy labels.
   
+- **\[Tree Type: jt/st\]**
+  - Select the type of merge tree from jt (join tree) and st (split tree).
+  
+- **\[Glabal or Pairwise Mapping: GM/PM\]**
+  - Select strategy for pivot tree selection from GM (time-varying pivot tree for global mapping) and PM (Pivot-free strategy for pairwise mapping).
+ 
+- **\[Skip merge tree and Morse complex calculation\]**
+  - You can skip merge tree and morse smale calculation when you already have them, and just want to change parameters for computing interleaving distance.
+  - 1 means skip, and 0 means do not skip.
+  
+ - **\[Output labelling result for global mapping\]**
+  - If you are curious about the labelling results for each tree, you can set this to be 1.
+
+ - **\[threshold for simplification (optional)\]**
+  - You can specify the threshold for simplification directly.
+  - Otherwise, this code will plot persistence curves for time-varying data, and require you to choose threshold based on persistence curve.
+  <center><img src="PersistenceCurves-VortexStreet.png" width="120"></center>
+  
+ 
