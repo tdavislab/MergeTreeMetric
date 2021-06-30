@@ -94,16 +94,16 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
   - Select the type of merge tree from jt (join tree) and st (split tree).
   
 - **\[Glabal or Pairwise Mapping: GM/PM\]**
-  - Select strategy for pivot tree selection from GM (time-varying pivot tree for global mapping) and PM (Pivot-free strategy for pairwise mapping).
+  - Select strategy for pivot tree selection from GM (time-varying pivot tree for global mapping) and PM (pivot-free strategy for pairwise mapping).
  
 - **\[Skip merge tree and Morse complex calculation\]**
   - You can skip merge tree and morse smale calculation when you already have them, and just want to change parameters for computing interleaving distance.
   - 1 means skip, and 0 means do not skip.
   
- - **\[Output labelling result for global mapping\]**
+- **\[Output labelling result for global mapping\]**
   - If you are curious about the labelling results for each tree, you can set this to be 1.
 
- - **\[threshold for simplification (optional)\]**
+- **\[threshold for simplification (optional)\]**
   - You can specify the threshold for simplification directly.
   - Otherwise, this code will plot persistence curves for time-varying data, and require you to choose threshold based on persistence curve.
   <center><img src="PersistenceCurves-VortexStreet.png" width="360"></center>
