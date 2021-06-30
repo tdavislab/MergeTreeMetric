@@ -24,3 +24,17 @@ Tested with Python 2.7&3.7, MacOS and Linux.
 - [NetworkX](https://networkx.github.io/)
 - [Matplotlib](https://matplotlib.org/) 
 - [VTK](https://vtk.org) 
+
+If you do not have these packages installed, please use the following command to intall them.
+
+```bash
+pip install numpy
+pip install scipy
+pip install networkx
+pip install matplotlib
+pip install vtk
+```
+
+2. TTK 
+
+We need TTK and Paraview to calculate the merge trees from scalar fields. Please following this [link](https://topology-tool-kit.github.io/installation.html) to install both TTK and Paraview.
