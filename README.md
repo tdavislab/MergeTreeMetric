@@ -132,7 +132,7 @@ You can find merge trees (VTK and TXT format), persistence curves, persistence d
  
  You can get the Fig. 6 from paper (under review), using the following command. And you will need to set lambda to be 0.5 and simplification to be 0.2 during the running of program.
 ```bash
-$ python MergeTreeMetric.py ./data/MovingGaussian/ Scalars_ ET dmyLeaf st GM 0 0
+$ python MergeTreeMetric.py ./data/MovingGaussian/ Scalars_ ET dmyLeaf st GM 0 1
 ```
 
 There is an example to plot pairwise distance matrices:
