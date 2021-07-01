@@ -111,13 +111,22 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
 ### Output
 
 - Pairwise distance matrices for time-varying data
-  - Under "/Path/To/Files/Output/DistanceMatrices/"
+  - Under "/Path/To/Files/Output/DistanceMatrices/".
   - Format: n by n matrix, where n is the number of instances.
+  
 - Critical points responsible for interleaving distance between adjacent data instances
-  -  Under "/Path/To/Files/Output/Diagnose/visTrans_*"
+  -  Under "/Path/To/Files/Output/Diagnose/visTrans_*".
   - "visBackTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i-1}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> 
-  - "visTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i+1}"> $$x=\sqrt{2}$$
-
+  - "visTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i+1}"> .
+  
+- Persistence curve and threshold for simplification
+  - Under "/Path/To/Files/Output/Figures/".
+  
+- Labeling results
+  - Under "/Path/To/Files/Output/LabelInfo/".
+ 
+### Intermediate files
+You can find merge trees (VTK and TXT format), persistence curves, persistence diagrams of merge trees, and vectors of scalar field under "/Path/To/Files/IntermediateFiles".
  
 ## Usage
  
