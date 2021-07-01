@@ -106,7 +106,7 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
 - **\[threshold for simplification (optional)\]**
   - You can specify the threshold for simplification directly.
   - Otherwise, this code will plot persistence curves for time-varying data, and require you to choose threshold based on persistence curve.
-  <center><img src="PersistenceCurves-VortexStreet.png" width="360"></center>
+  <center><img src="figsForREADME/PersistenceCurves-VortexStreet.png" width="360"></center>
   
 ### Output
 
@@ -139,7 +139,7 @@ There is an example to plot pairwise distance matrices:
 ```bash
 $ python plotMatrix.py ./data/MovingGaussian/
 ```
- <center><img src="distMatrices.png" width="700"></center>
+ <center><img src="figsForREADME/distMatrices.png" width="700"></center>
 
 We also provide an example to plot labelling results:
 ```bash
@@ -147,7 +147,7 @@ $ python plotLabels.py ./data/MovingGaussian/
 ```
 You can find figures under "/Path/To/Files/Output/Figures/LabelInfo/"
 
- <center><img src="labels.png" width="700"></center>
+ <center><img src="figsForREADME/labels.png" width="700"></center>
  
 Finally, we give an example for visualization using Paraview.
 - You can open Paraview.
@@ -156,4 +156,11 @@ Finally, we give an example for visualization using Paraview.
 - Change three file names to your local path files.
 
 And you will get the following figures (green bubbles are the critical points responsible for interleaving distance between adjacent data instances):
- <center><img src="paraviewVisMovingGaussian.png" width="700"></center>
+ <center><img src="figsForREADME/paraviewVisMovingGaussian.png" width="700"></center>
+ 
+ 
+## Citation
+
+## License
+
+Standard MIT disclaimer applies, see LICENSE for full text. 
