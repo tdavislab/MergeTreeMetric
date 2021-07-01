@@ -116,13 +116,13 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
   
 - Critical points responsible for interleaving distance between adjacent data instances
   -  Under "/Path/To/Files/Output/Diagnose/visTrans_*".
-  - "visBackTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i-1}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> 
-  - "visTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i+1}"> .
+  - "visBackTrans_i.vtp" shows the critical point from instance i. This critical point is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i-1}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> 
+  - "visTrans_i.vtp" shows the critical point from instance i. This critical point is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i+1}"> .
   
 - Persistence curve and threshold for simplification
   - Under "/Path/To/Files/Output/Figures/".
   
-- Labeling results
+- Labeling results (optional)
   - Under "/Path/To/Files/Output/LabelInfo/".
  
 ### Intermediate files
