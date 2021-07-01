@@ -56,14 +56,14 @@ def findXYTEXT(x,y, d, Y):
     return xx, yy, Y
         
 def plotLabels(Y, labels, figFile):
-    fig = plt.figure(figsize=(15, 5))
+    fig = plt.figure(figsize=(5, 5))
     ax = fig.add_subplot(111)
     ax.scatter(Y[:,0], Y[:, 1], s=200, alpha=0.7, zorder=10,edgecolors='black')
 
     for j in range(len(labels)):
         if len(labels[j])==1:
             label = labels[j][0]
-            if label < 300:
+            if label < 3:
                 ax.annotate(label, xy=(Y[j, 0], Y[j, 1]+2.5),zorder=20, ha="center",fontsize=15)
         else:
             label = str(labels[j][0])
@@ -71,8 +71,8 @@ def plotLabels(Y, labels, figFile):
                 label = label + ', ' + str(labels[j][k])
             ax.annotate(label, xy=(Y[j, 0], Y[j, 1]+2.5),zorder=20, ha="center", fontsize=15)
     plt.title(figFile.split("/")[-1].split(".")[0])            
-    #plt.xlim(60, 130)
-    #plt.ylim(60, 130)
+    plt.xlim(60, 130)
+    plt.ylim(60, 130)
     #plt.xlim(0, 480)
     #plt.ylim(0, 60)
     plt.axis('off')         

@@ -135,5 +135,16 @@ You can find merge trees (VTK and TXT format), persistence curves, persistence d
 $ python MergeTreeMetric.py ./data/MovingGaussian/ Scalars_ ET dmyLeaf st GM 0 0
 ```
 
+There is an example to plot pairwise distance matrices:
+```bash
+$ python plotMatrix.py ./data/MovingGaussian/
+```
+ <center><img src="distMatrices.png" width="700"></center>
 
+We also provide an example to plot labelling results:
+```bash
+$ python plotLabels.py ./data/MovingGaussian/
+```
+You can find figures under "/Path/To/Files/Output/Figures/LabelInfo/"
 
+ <center><img src="labels.png" width="700"></center>
