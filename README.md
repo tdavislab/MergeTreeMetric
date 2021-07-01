@@ -130,7 +130,7 @@ You can find merge trees (VTK and TXT format), persistence curves, persistence d
  
 ## Usage
  
- You can get the Fig. 6 from paper (under review), using the following command. And you will need to set lambda to be 0.5 and simplification to be 0.02 during the running of program.
+ You can get the Fig. 6 from paper (under review), using the following command. And you will need to set lambda to be 0.5 and simplification to be 0.2 during the running of program.
 ```bash
 $ python MergeTreeMetric.py ./data/MovingGaussian/ Scalars_ ET dmyLeaf st GM 0 0
 ```
@@ -148,3 +148,12 @@ $ python plotLabels.py ./data/MovingGaussian/
 You can find figures under "/Path/To/Files/Output/Figures/LabelInfo/"
 
  <center><img src="labels.png" width="700"></center>
+ 
+Finally, we give an example for visualization using Paraview.
+- You can open Paraview.
+- Click File -> Load State... and select "MovingGaussian.pvsm"
+- In "Load State File Options", select "Choose File Names"
+- Change three file names to your local path files.
+
+And you will get the following figures (green bubbles are the critical points responsible for interleaving distance between adjacent data instances):
+ <center><img src="paraviewVisMovingGaussian.png" width="700"></center>
