@@ -108,4 +108,23 @@ $ python MergeTreeMetric.py [Path to files] [Name of scalar field] [Mapping Stra
   - Otherwise, this code will plot persistence curves for time-varying data, and require you to choose threshold based on persistence curve.
   <center><img src="PersistenceCurves-VortexStreet.png" width="360"></center>
   
+### Output
+
+- Pairwise distance matrices for time-varying data
+  - Under "/Path/To/Files/Output/DistanceMatrices/"
+  - Format: n by n matrix, where n is the number of instances.
+- Critical points responsible for interleaving distance between adjacent data instances
+  -  Under "/Path/To/Files/Output/Diagnose/visTrans_*"
+  - "visBackTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i-1}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> 
+  - "visTrans_i.vtp" shows the critical point from instance i, that is responsible for the interleaving distance between  <img src="https://render.githubusercontent.com/render/math?math=T^{i}"> and  <img src="https://render.githubusercontent.com/render/math?math=T^{i+1}"> 
+
  
+## Usage
+ 
+ You can get the Fig. 6 from paper (under review), using the following command. And you will need to set lambda to be 0.5 and simplification to be 0.02 during the running of program.
+```bash
+$ python MergeTreeMetric.py ./data/MovingGaussian/ Scalars_ ET dmyLeaf st GM 0 0
+```
+
+
+
