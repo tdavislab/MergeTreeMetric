@@ -160,6 +160,7 @@ And you will get the following figures (green bubbles are the critical points re
  
  
 ## Citation
+Yan L, Masood TB, Rasheed F, Hotz I, Wang B. Geometry-Aware Merge Tree Comparisons for Time-Varying Data with Interleaving Distances. arXiv preprint [arXiv:2107.14373](https://arxiv.org/abs/2107.14373). 2021 Jul 29.
 
 ## License
 
